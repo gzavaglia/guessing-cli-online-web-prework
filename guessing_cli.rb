@@ -5,7 +5,7 @@ end
 
 def game_on(*input)
   while rando = random_number
-  binding.pry 
+ 
   if input == rando
     puts "You guessed the correct number!"
   elsif input != rando || input != "exit" 
