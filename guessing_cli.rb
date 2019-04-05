@@ -1,4 +1,4 @@
-# Code your solution here!
+require 'pry'
 def random_number
   random_number = rand(1..6)
 end 
@@ -6,6 +6,7 @@ end
 def game_on(*input)
   rando = random_number 
   if input == rando
+    binding.pry 
     puts "You guessed the correct number!"
   elsif input != rando || input != "exit" 
     puts "/The computer guessed #{rando}./"
