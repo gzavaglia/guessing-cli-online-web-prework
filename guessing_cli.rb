@@ -4,13 +4,14 @@ def random_number
 end 
 
 def game_on(*input)
-  rando = random_number
+  while rando = random_number
   binding.pry 
   if input == rando
     puts "You guessed the correct number!"
   elsif input != rando || input != "exit" 
     puts "/The computer guessed #{rando}./"
   end
+end 
 end 
 
 def exit_game
